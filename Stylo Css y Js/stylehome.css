@@ -1,0 +1,93 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner__home{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(#00ff62,#00e1ff);
+}
+
+.home__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*centrado*/
+    text-align: center;
+}
+
+.home__content h1{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;   
+}
+
+.home__content h2{
+    font-size: 1.25em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.footer ul{
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+    color: black;
+    font-size: 1em;    
+    
+}
+
+@media screen and (min-width:992px){
+    footer ul li{
+      display: inline-flex;
+      margin-left: 50px;
+    }
+}
+/* contactos */
+
+.formulario {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+form label{
+    display: block;
+    margin-top: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+} 
+
+form input{
+   width: 100%;
+   height: 30px;
+}
+/*producto*/
+
+.Flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Flex-1 img{
+    width: 80%;
+}
+.Flex-2 {
+    width: 80%;
+}

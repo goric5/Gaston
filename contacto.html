@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 
 <html>
-    <head></head>
+   <head> 
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- titulo -->
+      <title>Buenas  Vibras</title> 
+      <link rel="stylesheet" href="Stylo Css y Js/bootstrap-5.2.2-dist/css/bootstrap.min.css">   
+      <script src="Stylo Css y Js/bootstrap-5.2.2-dist/js/bootstrap.min.js"> </script>
+      <link rel="stylesheet" href="Stylo Css y Js/stylehome.css">
+  
+   </head>
 
      <body>
-          <h1>Contacto</h1>
-    <form action="Home.html">
-     <div>
-        <label for="">Nombre:</label>
-        <br>
-        <input type="text" placeholder="Escribe tu nombre" required>
-        <br><br>
-     </div>
-     <div>
-        <label for="">Correo electrónico:</label>
-        <br>
-        <input type="text" placeholder="Escribe tu correo electrónico"  required>
-        <br><br>
-     </div>
-     <div>
-        <label for="">Número de teléfono:</label>
-        <br>
-        <input type="text" placeholder="Número de teléfono" required>
-        <br><br>
-     </div>
-     <div>
-        <label for="">Localidad y Provincia:</label>
-        <br>
-        <input type="text" placeholder="Escribe tu Localidad y Provincia" required>
-        <br><br>
-     </div>
-     <div>
-        <label for="">Producto Personalizado:</label>
-        <br>
-        <textarea cols="50" rows="10"></textarea> 
-        <br>
-     </div> 
-    
-     <input type="Submit" value="Enviar">
-    </form>
+      <header>
+     
+         <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Buenas Vibras</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Como Comprar.html">Cómo Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            
+       </header>
+      <section class="formulario">
 
+         <div class="formulario__content">  
+         
+             <h1>Contacto</h1>
+                 
+             <form action="Home.html">
+     
+                 <div>
+                     <label for="nombre" class="colocar_nombre">Nombre</label>
+                     <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" >
+                     </div>
+                 
+                     <div>
+                     <label for="email" class="colocar_email">Correo electrónic</label>
+                     <input type="email" name="introducir_email" id="email" required="obligatorio" >
+                     </div>
+                 
+                     <div>
+                     <label for="telefone" class="colocar_telefono">Número de teléfono:</label>
+                     <input type="number" name="introducir_telefono" id="telefono" >
+                     </div>
+     
+                     <div>
+                     <label for="nombre" class="colocar_localidad">Localidad y Provincia</label>
+                     <input type="text" name="introducir_localidad" id="localidad" required="obligatorio" >
+                     </div>        
+                 
+     
+                 <div>
+                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                     
+                 <div>
+                     <label for="">Producto Personalizado:</label>
+                     <textarea cols="50" rows="10"></textarea> 
+                 </div> 
+             
+                 <input type="Submit" value="Enviar">
+             </form>
+     
+         </div>
+     
+     </section>
+     <footer class="footer">
+
+      <ul>
+          <li>Instagram: @buenasvibras.rda</li>
+          <li>Facebook: Buenas Vibras Rda</li>
+      </ul>
+
+ </footer>
     </body>
 
 </html>
